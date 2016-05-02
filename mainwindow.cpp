@@ -22,13 +22,13 @@ MainWindow::~MainWindow()
 void MainWindow::Init()
 {
     setWindowTitle(tr("4路交道 TH_ISE130_I "));
-    setFixedSize(320,240);
+//    setFixedSize(320,240);
     setAllLineEditReadOnly(true);
     //    ui->spinBox->setFocus();
     this->remoteIP = QHostAddress::LocalHost;
-    this->remotePort = 2000;
+    this->remotePort = 1000;
     this->fixedLoaclPort = true;
-    this->localPort = 1000;
+    this->localPort = 2000;
     this->timePeriod = 5;
     this->timer = new QTimer(this->parent());
 
@@ -216,14 +216,14 @@ void MainWindow::on_socketRecive()
 
 void MainWindow::setDisplayValue(TH_ISE130_I::DataFrame value)
 {
-    this->ui->IN_1_DC->setText(QString::number(value.sVale.IN_1_DC));
-    this->ui->IN_1_AC->setText(QString::number(value.sVale.IN_1_AC));
-    this->ui->IN_2_DC->setText(QString::number(value.sVale.IN_2_DC));
-    this->ui->IN_2_AC->setText(QString::number(value.sVale.IN_2_AC));
-    this->ui->IN_3_DC->setText(QString::number(value.sVale.IN_3_DC));
-    this->ui->IN_3_AC->setText(QString::number(value.sVale.IN_3_AC));
-    this->ui->IN_4_DC->setText(QString::number(value.sVale.IN_4_DC));
-    this->ui->IN_4_AC->setText(QString::number(value.sVale.IN_4_AC));
+    this->ui->IN_1_DC->setText(QString::asprintf("%.2f",value.sVale.IN_1_DC));
+    this->ui->IN_1_AC->setText(QString::asprintf("%.2f",value.sVale.IN_1_AC));
+    this->ui->IN_2_DC->setText(QString::asprintf("%.2f",value.sVale.IN_2_DC));
+    this->ui->IN_2_AC->setText(QString::asprintf("%.2f",value.sVale.IN_2_AC));
+    this->ui->IN_3_DC->setText(QString::asprintf("%.2f",value.sVale.IN_3_DC));
+    this->ui->IN_3_AC->setText(QString::asprintf("%.2f",value.sVale.IN_3_AC));
+    this->ui->IN_4_DC->setText(QString::asprintf("%.2f",value.sVale.IN_4_DC));
+    this->ui->IN_4_AC->setText(QString::asprintf("%.2f",value.sVale.IN_4_AC));
 }
 
 //void MainWindow::on_refresh(int index)
