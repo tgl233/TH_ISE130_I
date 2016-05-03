@@ -30,9 +30,12 @@ TH_ISE130_I::DataFrame TH_ISE130_I::toDatFrame(QByteArray arry)
         qDebug()<<"非法的TH_ISE130_I数据包： "<<arry.toHex().toUpper();
     }else{
         ByteData *pdat = (ByteData*)arry.data();
-        for(int i=0; i<8 ; i++){
+        for(int i=0; i<8 ;){
             ret.Value[i] = (float)pdat->Value[i]/100;
             qDebug("TH_ISE130_I->DataFrame->Value[%d]: %.2f",i,ret.Value[i]);
+            ret.Value[i+1] = (float)pdat->Value[i+1]*2/100;
+            qDebug("TH_ISE130_I->DataFrame->Value[%d]: %.2f",i+1,ret.Value[i+1]);
+            i += 2;
         }
     }
 

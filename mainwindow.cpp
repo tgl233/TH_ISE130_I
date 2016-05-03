@@ -200,7 +200,7 @@ void MainWindow::on_socketRecive()
     lastDataArray.clear();
     }else{
         this->lastDataArray = data.data;
-        this->on_spinBox_valueChanged(1);
+        this->on_spinBox_valueChanged(this->ui->spinBox->value());
     }
 
     qDebug()<<"sender: "<<ip.toString()<<"Port: "<<port<<Convert::ByteArrayToHexString(rec);
