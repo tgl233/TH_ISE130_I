@@ -72,11 +72,14 @@ void MainWindow::on_configChange(QHostAddress remoteip, int remoteport, bool fix
                                  int timePeriod)
 {
     qDebug()<<remoteip.toString()<<remoteport<<fixed<<localport<<timePeriod;
+    qDebug()<<socket->state();
     if(fixed)
     {
         this->socket->bind(QHostAddress::Any, localport);
+        qDebug()<<socket->state();
     }
     socket->connectToHost(remoteip,remoteport);
+        qDebug()<<socket->state();
     this->timer->setInterval(timePeriod*1000);
 
     this->remoteIP = remoteip;

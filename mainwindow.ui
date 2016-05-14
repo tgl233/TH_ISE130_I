@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>588</width>
-    <height>206</height>
+    <width>434</width>
+    <height>225</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,8 +20,8 @@
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="0">
        <widget class="QLabel" name="label">
         <property name="font">
          <font>
@@ -32,11 +32,11 @@
          </font>
         </property>
         <property name="text">
-         <string>IN_1_DC :</string>
+         <string>第1路：</string>
         </property>
        </widget>
       </item>
-      <item>
+      <item row="1" column="1">
        <widget class="QLineEdit" name="IN_1_DC">
         <property name="font">
          <font>
@@ -57,56 +57,7 @@
         </property>
        </widget>
       </item>
-      <item>
-       <widget class="QLabel" name="label_2">
-        <property name="font">
-         <font>
-          <family>微软雅黑</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <italic>false</italic>
-          <bold>true</bold>
-          <underline>false</underline>
-          <strikeout>false</strikeout>
-         </font>
-        </property>
-        <property name="text">
-         <string>V  </string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeType">
-         <enum>QSizePolicy::Expanding</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_4">
-        <property name="font">
-         <font>
-          <family>微软雅黑</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>  IN_1_AC :</string>
-        </property>
-       </widget>
-      </item>
-      <item>
+      <item row="1" column="2">
        <widget class="QLineEdit" name="IN_1_AC">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
@@ -127,29 +78,7 @@
         </property>
        </widget>
       </item>
-      <item>
-       <widget class="QLabel" name="label_3">
-        <property name="font">
-         <font>
-          <family>微软雅黑</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <italic>false</italic>
-          <bold>true</bold>
-          <underline>false</underline>
-          <strikeout>false</strikeout>
-         </font>
-        </property>
-        <property name="text">
-         <string>V</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
-      <item>
+      <item row="2" column="0">
        <widget class="QLabel" name="label_8">
         <property name="font">
          <font>
@@ -160,11 +89,11 @@
          </font>
         </property>
         <property name="text">
-         <string>IN_2_DC :</string>
+         <string>第2路：</string>
         </property>
        </widget>
       </item>
-      <item>
+      <item row="2" column="1">
        <widget class="QLineEdit" name="IN_2_DC">
         <property name="font">
          <font>
@@ -179,53 +108,7 @@
         </property>
        </widget>
       </item>
-      <item>
-       <widget class="QLabel" name="label_6">
-        <property name="font">
-         <font>
-          <family>微软雅黑</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <italic>false</italic>
-          <bold>true</bold>
-          <underline>false</underline>
-          <strikeout>false</strikeout>
-         </font>
-        </property>
-        <property name="text">
-         <string>V  </string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer_2">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_5">
-        <property name="font">
-         <font>
-          <family>微软雅黑</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>  IN_2_AC :</string>
-        </property>
-       </widget>
-      </item>
-      <item>
+      <item row="2" column="2">
        <widget class="QLineEdit" name="IN_2_AC">
         <property name="font">
          <font>
@@ -240,29 +123,7 @@
         </property>
        </widget>
       </item>
-      <item>
-       <widget class="QLabel" name="label_7">
-        <property name="font">
-         <font>
-          <family>微软雅黑</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <italic>false</italic>
-          <bold>true</bold>
-          <underline>false</underline>
-          <strikeout>false</strikeout>
-         </font>
-        </property>
-        <property name="text">
-         <string>V</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_3">
-      <item>
+      <item row="3" column="0">
        <widget class="QLabel" name="label_16">
         <property name="font">
          <font>
@@ -273,11 +134,11 @@
          </font>
         </property>
         <property name="text">
-         <string>IN_3_DC :</string>
+         <string>第3路：</string>
         </property>
        </widget>
       </item>
-      <item>
+      <item row="3" column="1">
        <widget class="QLineEdit" name="IN_3_DC">
         <property name="font">
          <font>
@@ -292,53 +153,7 @@
         </property>
        </widget>
       </item>
-      <item>
-       <widget class="QLabel" name="label_11">
-        <property name="font">
-         <font>
-          <family>微软雅黑</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <italic>false</italic>
-          <bold>true</bold>
-          <underline>false</underline>
-          <strikeout>false</strikeout>
-         </font>
-        </property>
-        <property name="text">
-         <string>V  </string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer_3">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_15">
-        <property name="font">
-         <font>
-          <family>微软雅黑</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>  IN_3_AC :</string>
-        </property>
-       </widget>
-      </item>
-      <item>
+      <item row="3" column="2">
        <widget class="QLineEdit" name="IN_3_AC">
         <property name="font">
          <font>
@@ -353,8 +168,14 @@
         </property>
        </widget>
       </item>
-      <item>
+      <item row="0" column="2">
        <widget class="QLabel" name="label_14">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="font">
          <font>
           <family>微软雅黑</family>
@@ -367,15 +188,14 @@
          </font>
         </property>
         <property name="text">
-         <string>V</string>
+         <string>交流电压(V)</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_4">
-      <item>
+      <item row="4" column="0">
        <widget class="QLabel" name="label_9">
         <property name="font">
          <font>
@@ -386,11 +206,11 @@
          </font>
         </property>
         <property name="text">
-         <string>IN_4_DC :</string>
+         <string>第4路：</string>
         </property>
        </widget>
       </item>
-      <item>
+      <item row="4" column="1">
        <widget class="QLineEdit" name="IN_4_DC">
         <property name="font">
          <font>
@@ -405,53 +225,7 @@
         </property>
        </widget>
       </item>
-      <item>
-       <widget class="QLabel" name="label_10">
-        <property name="font">
-         <font>
-          <family>微软雅黑</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <italic>false</italic>
-          <bold>true</bold>
-          <underline>false</underline>
-          <strikeout>false</strikeout>
-         </font>
-        </property>
-        <property name="text">
-         <string>V  </string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer_4">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_12">
-        <property name="font">
-         <font>
-          <family>微软雅黑</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>  IN_4_AC :</string>
-        </property>
-       </widget>
-      </item>
-      <item>
+      <item row="4" column="2">
        <widget class="QLineEdit" name="IN_4_AC">
         <property name="font">
          <font>
@@ -466,8 +240,14 @@
         </property>
        </widget>
       </item>
-      <item>
+      <item row="0" column="1">
        <widget class="QLabel" name="label_13">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="font">
          <font>
           <family>微软雅黑</family>
@@ -480,7 +260,10 @@
          </font>
         </property>
         <property name="text">
-         <string>V</string>
+         <string>直流电压(V)</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
@@ -495,6 +278,9 @@
     </item>
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMinimumSize</enum>
+      </property>
       <item>
        <spacer name="horizontalSpacer_6">
         <property name="orientation">
@@ -517,7 +303,7 @@
          </sizepolicy>
         </property>
         <property name="text">
-         <string>设备索引号：</string>
+         <string>模块索引号：</string>
         </property>
        </widget>
       </item>
